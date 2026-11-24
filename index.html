@@ -4,24 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>inicio</title>
+
+    <title>Início</title>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body class="bg-white text-dark">
+
+    <!-- Menu de navegação -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
+
             <a class="navbar-brand" href="index.html">
-                CENTRAL DOS JOGOS
+                CENTRAL DE JOGOS
             </a>
+
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+
                 <span class="navbar-toggler-icon"></span>
+
             </button>
+
             <div class="collapse navbar-collapse" id="menu">
+
                 <ul class="navbar-nav ms-auto">
+
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
+                        <a class="nav-link active" href="index.html">Início</a>
                     </li>
 
                     <li class="nav-item">
@@ -31,20 +42,135 @@
                     <li class="nav-item">
                         <a class="nav-link" href="jogosescolares.html">Jogos Escolares</a>
                     </li>
+
                 </ul>
+
             </div>
+
         </div>
     </nav>
-    <section id="inicio" class="py-5 text-center">
+
+
+
+    <section id="inicio" class="py-5 text-center bg-white">
+
         <div class="container">
 
-            <h1>Vem competir com a gente!</h1>
+            <h1 class="display-4 fw-bold text-primary">
+                Vem competir com a gente!
+            </h1>
 
-            <p>Aqui temos Competições e jogos em um só lugar</p>
+            <p class="lead mt-3 text-muted">
+                Um espaço dedicado ao esporte, à integração
+                e ao espírito esportivo.<br>
+                Conheça modalidades esportivas, acompanhe campeonatos
+                e fique por dentro dos jogos escolares.
+            </p>
 
         </div>
+
     </section>
+
+
+    <!-- Cards de destaque -->
+    <section class="py-5 bg-light">
+
+        <div class="container">
+
+            <h2 class="text-center mb-4 fw-bold text-primary">
+                Conheça a Central de Jogos
+            </h2>
+
+            <div class="row g-4 justify-content-center">
+
+                <!-- Card Competições -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card shadow rounded-3 h-100 border-0">
+
+                        <img src="img/fundo-competicoes.png" class="card-img-top" alt="Competições esportivas">
+
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title fw-bold text-primary">Competições</h5>
+
+                            <p class="card-text text-muted">
+                                Acompanhe os campeonatos e participe, convide amigos
+                                e se inscreva agora na página Competições.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Card Jogos Escolares -->
+                <div class="col-md-6 col-lg-4">
+
+                    <div class="card shadow rounded-3 h-100 border-0">
+
+                        <img src="img/Jogosescolares.png" class="card-img-top" alt="Jogos escolares">
+
+                        <div class="card-body text-center">
+
+                            <h5 class="card-title fw-bold text-primary">Jogos Escolares</h5>
+
+                            <p class="card-text text-muted">
+                                Conheça as modalidades esportivas, acompanhe
+                                as atividades e competições entre estudantes e participe.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Sobre a plataforma -->
+    <section class="py-5 bg-white">
+
+        <div class="container text-center">
+
+            <h2 class="mb-4">Sobre a Central de Jogos</h2>
+
+            <p>
+                A Central de Jogos foi criada para reunir informações
+                sobre competições e atividades esportivas em um só lugar.
+                Nosso objetivo é incentivar a participação dos estudantes
+                no esporte, promovendo a integração, a diversão
+                e o espírito esportivo.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- Rodapé -->
+    <footer class="bg-primary text-white text-center py-3">
+
+        <div class="container">
+
+            <p class="mb-0">
+                Central de Jogos — Esporte, integração e participação.
+            </p>
+
+        </div>
+
+    </footer>
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
