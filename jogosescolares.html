@@ -13,20 +13,31 @@
 
 <body class="bg-white text-dark">
 
+
+    <!-- Menu de navegação -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+
         <div class="container">
 
-            <a class="navbar-brand" href="index.html">
+            <a class="navbar-brand fw-bold" href="index.html">
                 CENTRAL DE JOGOS
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse" data-bs-target="#menu">
 
                 <span class="navbar-toggler-icon"></span>
+
             </button>
 
             <div class="collapse navbar-collapse" id="menu">
+
                 <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="competicoes.html">Competições</a>
                     </li>
@@ -36,52 +47,137 @@
                     </li>
 
                 </ul>
+
             </div>
 
         </div>
+
     </nav>
 
-    <section class="py-5 text-center">
+
+    <!-- Apresentação -->
+    <section class="py-5 text-center bg-light">
+
         <div class="container">
 
-            <h1 class="fw-bold text-dark">Jogos Escolares</h1>
+            <h1 class="fw-bold text-primary">
+                Jogos Escolares
+            </h1>
 
-            <p class="fw-bold text-dark">Competições, integração e espírito esportivo entre estudantes.</p>
+            <p class="mt-3 text-muted">
+                Competições, integração e espírito esportivo entre estudantes.
+            </p>
 
         </div>
+
     </section>
 
-    <section class="py-5">
+
+    <!-- Modalidades em destaque -->
+    <section class="py-5 bg-light">
+
         <div class="container">
 
-            <h2 class="text-center mb-4 fw-bold text-dark">Modalidades em destaque</h2>
+            <h2 class="text-center mb-4 fw-bold text-primary">
+                Modalidades em destaque
+            </h2>
 
             <div class="row g-4">
 
                 <div class="col-md-6 col-lg-4 mx-auto">
-                    <div class="card shadow rounded-3">
 
-                        <img src="img/Jogosescolares.png" class="card-img-top" alt="Competição de futsal">
+                    <div class="card shadow rounded-3 h-100 border-0">
+
+                        <img src="img/Jogosescolares.png"
+                            class="card-img-top"
+                            alt="Competição de futsal">
 
                         <div class="card-body text-center">
 
-                            <h5 class="card-title">Futsal</h5>
+                            <h5 class="card-title fw-bold text-primary">
+                                Futsal
+                            </h5>
 
-                            <p class="card-text">
+                            <p class="card-text text-muted">
                                 Conheça as equipes, acompanhe os jogos e participe
                                 das competições escolares de futsal.
                             </p>
 
-                            <a href="#" class="btn btn-primary">Ver detalhes</a>
+                            <button type="button" class="btn btn-primary"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#detalhesFutsal"
+                                aria-controls="detalhesFutsal">
+
+                                Ver detalhes
+
+                            </button>
 
                         </div>
+
                     </div>
+
                 </div>
 
             </div>
 
         </div>
+
     </section>
+
+
+    <!-- Painel lateral de Futsal -->
+    <div class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="detalhesFutsal"
+        aria-labelledby="tituloFutsal">
+
+        <div class="offcanvas-header">
+
+            <h5 class="offcanvas-title fw-bold text-primary"
+                id="tituloFutsal">
+
+                Futsal
+
+            </h5>
+
+            <button type="button" class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Fechar">
+
+            </button>
+
+        </div>
+
+        <div class="offcanvas-body">
+
+            <h6 class="fw-bold">
+                Sobre o Futsal
+            </h6>
+
+            <p>
+                O futsal é uma modalidade esportiva coletiva
+                disputada entre duas equipes, que buscam marcar
+                gols utilizando os pés.
+            </p>
+
+            <hr>
+
+            <h6 class="fw-bold">
+                Jogos Escolares
+            </h6>
+
+            <p>
+                Acompanhe as informações sobre as equipes,
+                as partidas e as atividades relacionadas
+                às competições escolares de futsal.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Rodapé -->
     <footer class="bg-primary text-white text-center py-3">
 
         <div class="container">
@@ -93,6 +189,8 @@
         </div>
 
     </footer>
+
+
     <script src="js/bootstrap.bundle.min.js"></script>
 
 </body>
